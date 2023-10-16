@@ -1,0 +1,77 @@
+@keyframes showmodal {
+  0% {
+    transform: translate(-150%, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes hidemodal {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, 100%);
+  }
+}
+
+.size-2 {
+  font-size: 2em;
+}
+.size-3 {
+  font-size: 3em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button-icon {
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.goldenrod-hover:hover {
+  color: goldenrod;
+  transition: all 0.3s;
+}
+
+// M O D A L
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  width: 80%;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: firebrick;
+  animation-name: showmodal;
+  animation-duration: 0.3s;
+  .modal-options {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  .modal-content {
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}

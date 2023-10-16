@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400');
+
+header {
+  position: relative;
+  width: 100vw;
+  min-height: 64px;
+  padding: 4px;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Teko, Avenir, serif;
+
+  .sportlogo-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1em;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .apptitle {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255,255,255,0.2);
+    width: 330px;
+    border-radius: 8px;
+    .apptitle-text {
+      padding: 0.6em;
+      font-size: 1.6em;
+      font-weight: bold;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .apptitle-text:first-child {
+      border-left: none;
+    }
+    .apptitle-text:last-child {
+      flex-grow: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

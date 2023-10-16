@@ -1,0 +1,28 @@
+
+.principal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  > * {
+    margin-left: 1em;
+  }
+  > header {
+    margin-left: 0;
+  }
+  .detalle-equipo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    figure {
+      width: 256px;
+      height: 256px;
+    }
+  }
+}

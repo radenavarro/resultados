@@ -1,0 +1,49 @@
+table {
+  border-collapse: collapse;
+  background-color: rgba(0,0,0,0.6);
+  margin-top: 2em;
+}
+.tabla-clasificacion {
+  margin-top: 2em;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 44%;
+  overflow: hidden;
+  h2 {
+    text-align: center;
+  }
+  tr {
+    td, th {
+      text-align: left;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.4em;
+      min-width: 32px;
+      img {
+        width: 16px;
+        vertical-align: -2px;
+      }
+    }
+    td.min-width {
+      width: fit-content;
+    }
+
+    td.td-center, th.th-center {
+      text-align: center;
+    }
+  }
+  tr:hover {
+    outline: 2px solid white;
+  }
+  .Promotion, .Promotion---Champions-League-{
+    background-color: rgba(103, 255, 0, 0.2);
+  }
+  .Promotion-Play-off,
+  .Promotion---Europa-League-,
+  .Promotion---Europa-Conference-League- {
+    background-color: rgba(255, 118, 0, 0.2);
+  }
+  .Relegation, .Relegation---LaLiga2 {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+}
